@@ -1,0 +1,23 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
+    "iisExpress": {
+      "applicationUrl": "http://localhost:53051",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "OrderingService": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/v1/orders",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "APPSETTINGS__DBSETTINGS__CONNECTIONSTRING": "Server=(localdb)\\mssqllocaldb;Database=OrdersDb;Trusted_Connection=True;MultipleActiveResultSets=true"
+      }
+    }
+  }
+}
